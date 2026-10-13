@@ -101,7 +101,7 @@ function ProductDetail({ navigate, productId }) {
 
         <div className="detail-booking">
           <div className="detail-price">${product.price} <small>{t('tours_per_person')}</small></div>
-          <button className="detail-book-btn">{t('detail_book_now')}</button>
+          <button className="detail-book-btn" onClick={() => navigate('booking', product.id)}>{t('detail_book_now')}</button>
         </div>
       </div>
     </div>

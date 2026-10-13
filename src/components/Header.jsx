@@ -11,6 +11,7 @@ function Header({ navigate, page }) {
     { key: 'home', label: t('nav_home') },
     { key: 'tours', label: t('nav_tours') },
     { key: 'tickets', label: t('nav_tickets') },
+    { key: 'myorders', label: t('nav_myorders') },
     { key: 'about', label: t('nav_about') },
     { key: 'contact', label: t('nav_contact') },
   ]
@@ -42,6 +43,7 @@ function Header({ navigate, page }) {
             </div>
           )}
         </div>
+        <button className="admin-icon-btn" onClick={() => navigate('admin')} title={t('admin_title')}>⚙️</button>
         <button className="book-btn" onClick={() => navigate('tours')}>{t('nav_book')}</button>
       </div>
     </header>
